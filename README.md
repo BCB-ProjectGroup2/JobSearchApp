@@ -1,7 +1,16 @@
 # JobSearchApp
 
+## Introduction to JobSearchApp
+This app is a candidate-driven job search network Ias opposed to employer-driven). Candidates submit a form outlining the type of role they're looking for. Employers submit a form based off what they're looking for. There is a matching system and a contact form after.
 
-Two Forms (2 databases)
+## Dependencies
+ * Node JS
+* My SQL
+* Npm packages (express, mysql, body-parser, mocha, chai, nightmare)
+* Sequelize
+* Handlebars
+
+Two Forms (1 database, 2 tables)
 
 Candidate Form
 Department:
