@@ -1,16 +1,55 @@
-var express = require("express")
-var router = express.Router()
+var express = require("express");
+var router = express.Router();
+var db = require("../models/");
 
-router.get('/', function (req, res) {
-  res.render('index')
-})
+// get route -> index
+router.get("/", function(req, res) {
+  // send us to the next get function instead.
+  res.redirect("/jobsearch");
+});
 
-// router.get('/contact', function (req, res) {
-//   res.render('contact')
-// })
+// get route, edited to match sequelize
+router.get("/jobsearch", function(req, res) {
+  // replace old function with sequelize function
+  db.Burger.findAll()
+    // use promise method to pass the jobsearch...
+    .then(function(dbBurger) {
+      console.log(dbBurger);
+      // into the main index, updating the page
+      var hbsObject = { burger: dbBurger };
+      return res.render("index", hbsObject);
+    });
+});
 
-// router.get('/aboutme', function (req, res) {
-//   res.render('aboutme')
-// })
+// post route to create jobsearch
+router.post("/jobsearch/create", function(req, res) {
+  // edited burger create to add in a burger_name
+  db.Burger.create({
+    burger_name: req.body.burger_name
+  })
+    // pass the result of our call
+    .then(function(dbBurger) {
+      // log the result to our terminal/bash window
+      console.log(dbBurger);
+      // redirect
+      res.redirect("/");
+    });
+});
+
+// put route to devour a burger
+router.put("/jobsearch/update/:id", function(req, res) {
+  // update one of the jobsearch
+  db.Burger.update({
+    devoured: true
+  },
+  {
+    where: {
+      id: req.params.id
+    }
+  }
+  ).then(function(dbBurger) {
+    res.json("/");
+  });
+});
 
 module.exports = router;
