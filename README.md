@@ -8,7 +8,8 @@ When users open the app they have the ability to identify themselves as either a
 
 ### Here are the forms:
 
-``` Candidate Form
+Candidate Form
+``` 
 1. What department are you looking for a role in?
   1 - Business
   2 - HR / Admin
@@ -69,7 +70,8 @@ When users open the app they have the ability to identify themselves as either a
 
 ```
 
-``` Employer Form
+Employer Form
+``` 
 1. What department are you looking to hire for?
   1 - Business
   2 - HR / Admin
