@@ -1,5 +1,5 @@
 # JobSearchApp
-
+## Rai is awesome
 ## Introduction to JobSearchApp
 This app is a candidate-driven job search network Ias opposed to employer-driven). Candidates submit a form outlining the type of role they're looking for. Employers submit a form based off what they're looking for. There is a matching system and a contact form after.
 
