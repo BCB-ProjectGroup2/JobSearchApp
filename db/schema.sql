@@ -5,7 +5,7 @@ USE jobsearch_db;
 CREATE TABLE employees
 (
 	id int NOT NULL AUTO_INCREMENT,
-	department_name varchar(255) NOT NULL,
+	employee_name varchar(255) NOT NULL,
   company_size varchar(255) NOT NULL,
   company_maturity varchar(255) NOT NULL,
   office_culture varchar(255) NOT NULL,
