@@ -5,12 +5,17 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
-// router.get('/contact', function (req, res) {
-//   res.render('contact')
-// })
+router.get('/jobform', function (req, res) {
+  res.render('jobform')
+})
 
-// router.get('/aboutme', function (req, res) {
-//   res.render('aboutme')
-// })
+router.get('/employerform', function (req, res) {
+  res.render('employerform')
+})
+
+
+
+
+
 
 module.exports = router;
