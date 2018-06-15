@@ -1,5 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require('path');
 
 // bring in the models
 var db = require("./models");
@@ -19,6 +20,8 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname + '/public')))
 
 
 app.listen(3000, function(){
