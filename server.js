@@ -1,6 +1,10 @@
-var express = require("express")
-var app = express()
-var bodyParser = require("body-parser")
+var express = require("express");
+var bodyParser = require("body-parser");
+
+// bring in the models
+var db = require("./models");
+var app = express();
+
 var hbs = require("express-handlebars");
 
 var routes = require('./controllers/jobsearch_controller.js');
