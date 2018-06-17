@@ -1,5 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
   var Employer = sequelize.define("Employer", {
+    employer_name: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    
     department_name: {
       type: DataTypes.INTEGER,
       allowNull: false

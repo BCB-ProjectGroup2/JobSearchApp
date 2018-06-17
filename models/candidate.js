@@ -1,5 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
   var Candidate = sequelize.define("Candidate", {
+    candidate_name: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    
     department_name: {
       type: DataTypes.INTEGER,
       allowNull: false
