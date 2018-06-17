@@ -14,7 +14,7 @@
 
     <h3><strong>Question 2</strong></h3>
     <h4>What company size do you want to work for?</h4>
-    <select class="chosen-select" id="q2">
+    <select class="chosen-select" id="q">
       <option value="1">Small</option>
       <option value="2">Medium</option>
       <option value="3">Large</option>
@@ -24,7 +24,7 @@
 
     <h3><strong>Question 3</strong></h3>
     <h4>What company maturity level do you want to work for? </h4>
-    <select class="chosen-select" id="q3">
+    <select class="chosen-select" id="q">
       <option value="1">Early stage start-up</option>
       <option value="2">Established start-up</option>
       <option value="3">Large corporations</option>
@@ -35,7 +35,7 @@
 
     <h3><strong>Question 4</strong></h3>
     <h4>Which of the best describes the office culture you enjoy?</h4>
-    <select class="chosen-select" id="q4">
+    <select class="chosen-select" id="q">
       <option value="1">Casual</option>
       <option value="2">Formal</option>
       <option value="3">Relaxed</option>
@@ -45,7 +45,7 @@
 
     <h3><strong>Question 5</strong></h3>
     <h4>Describe the seniority level of role you're looking for? </h4>
-    <select class="chosen-select" id="q5">
+    <select class="chosen-select" id="q">
       <option value="1">Entry Level</option>
       <option value="2">Junior</option>
       <option value="3">Mid-Level</option>
@@ -55,7 +55,7 @@
 
     <h3><strong>Question 6</strong></h3>
     <h4>What is your salary range?</h4>
-    <select class="chosen-select" id="q6">
+    <select class="chosen-select" id="q">
       <option value="1">$20k - $50k</option>
       <option value="2">$50k - $100k</option>
       <option value="3">$100k - $150k</option>
@@ -65,7 +65,7 @@
 
     <h3><strong>Question 7</strong></h3>
     <h4>What type of role are you looking for? </h4>
-    <select class="chosen-select" id="q7">
+    <select class="chosen-select" id="q">
       <option value="1">Full Time</option>
       <option value="2">Part Time</option>
       <option value="3">Contract </option>
@@ -74,7 +74,7 @@
 
     <h3><strong>Question 8</strong></h3>
     <h4>When is the earliest you can start?</h4>
-    <select class="chosen-select" id="q8">
+    <select class="chosen-select" id="q">
       <option value="1">As soon as possible</option>
       <option value="2">Two weeks</option>
       <option value="3">At least a month out</option>
@@ -83,29 +83,29 @@
 
     <h3><strong>Question 9</strong></h3>
     <h4>Is upward mobility important to you?</h4>
-    <select class="chosen-select" id="q9">
+    <select class="chosen-select" id="q">
       <option value="1">Yes</option>
       <option value="2">No</option>
     </select><!--<div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q9_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>-->
 
     <h3><strong>Question 10</strong></h3>
     <h4>Is it important to you that the company has international offices?</h4>
-    <select class="chosen-select" id="q10">
+    <select class="chosen-select" id="q">
       <option value="1">Yes</option>
       <option value="2">No</option>
     </select>
 
-       <h3><strong>Question 11</strong></h3>
+       <h3 id="header"><strong>Question 11</strong></h3>
     <h4>Write a brief intro about yourself to potential employers (500 character max):</h4>
 
       <textarea>
-        
+
       </textarea>
           {{!-- creating text box here  --}}
     <!--<div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q10_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>-->
 
 
- <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ <button type="submit" id="candidateButton" class="btn btn-primary btn-lg btn-block submitButton"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
 
 </div>
