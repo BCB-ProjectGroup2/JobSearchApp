@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     company_maturity: {
-      type:  DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     office_culture: {
@@ -30,7 +30,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     salary_range: {
-      type:  DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     start_time: {
@@ -46,7 +46,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     about_me: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING(500),
       allowNull: true
     },
 
