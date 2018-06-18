@@ -45,6 +45,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
 
+    candidate_name:{
+      type: DataTypes.STRING(50),
+      allowNull: true
+    }
+
 
 
 
