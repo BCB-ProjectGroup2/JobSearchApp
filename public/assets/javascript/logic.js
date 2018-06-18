@@ -12,8 +12,6 @@ $(document).ready(function(){
       answers.push(dropDowns[i].value)
     }
       console.log(answers,form);
-
-
       $.ajax({
         method: "POST",
         url: "/formSubmit",
@@ -27,9 +25,6 @@ $(document).ready(function(){
         .done(function( msg ) {
           console.log( "Data Saved: " + msg );
         });
-
-
-    
   });
 });
 

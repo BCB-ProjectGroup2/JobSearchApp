@@ -1,1 +1,38 @@
+.h1,h1{
+  color: wheat;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+
+h3,h4 {
+  color: black;
+  font-family: 'Jua', sans-serif;
+
+}
+
+.jumbotron{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: floralwhite;
+    border-radius: .3rem;
+    opacity: 0.8;
+}
+
+body { 
+	background-image: url(https://i2.wp.com/blog.asha.org/wp-content/uploads/2016/12/shutterstock_494388982.jpg?resize=1000%2C667&ssl=1);
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+  background-size:  cover;
+}
+
+.btn-primary, .btn-danger, .btn-success {
+  margin-bottom: 25px;
+}
 

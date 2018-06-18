@@ -26,6 +26,6 @@ app.use('/', routes);
 var PORT = process.env.PORT || 3000;
 db.sequelize.sync().then(function() {
   app.listen(PORT, function(){
-  console.log('Job Search App listening on Port" + PORT')
+  console.log('Job Search App listening on Port' + PORT)
   });
 });
