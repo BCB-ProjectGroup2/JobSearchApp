@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Employer = sequelize.define("Employer", {
     employer_name: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     
@@ -9,47 +9,53 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     company_size: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     company_maturity: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     office_culture: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     role_seniority: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     role_type: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     salary_range: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     start_time: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+
     upward_mobility: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
+    
     international_offices: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
 
-    employer_name:{
-      type: DataTypes.STRING(50),
-      allowNull: false
-    }
+
 
 
   }, {

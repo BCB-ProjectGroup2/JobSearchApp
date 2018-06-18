@@ -2,7 +2,7 @@ CREATE DATABASE jobsearch_db;
 
 USE jobsearch_db;
 
-CREATE TABLE candidates
+CREATE TABLE Candidates
 (
 	id int NOT NULL AUTO_INCREMENT,
 	candidate_name varchar(50) NOT NULL,
@@ -14,13 +14,13 @@ CREATE TABLE candidates
   role_type int NOT NULL,
   salary_range int NOT NULL,
   start_time int NOT NULL,
-  upward_mobility int,
-  international_offices int,
-  about_me varchar (500) NULL,
+  upward_mobility int NOT NULL,
+  international_offices int NOT NULL,
+  about_me varchar (500) NOT NULL,
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE Employer
+CREATE TABLE Employers
 (
 	id int NOT NULL AUTO_INCREMENT,
   employer_name varchar(50) NOT NULL, 
@@ -32,8 +32,8 @@ CREATE TABLE Employer
   role_type int NOT NULL,
   salary_range int NOT NULL,
   start_time int NOT NULL,
-  upward_mobility INTEGER,
-  international_offices INTEGER,
+  upward_mobility int NOT NULL,
+  international_offices int NOT NULL,
 	PRIMARY KEY (id)
 );
 

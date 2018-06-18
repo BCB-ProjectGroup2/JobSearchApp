@@ -1,10 +1,17 @@
 <div class="container">
 
+    <div class="jumbotron">
+
     <h2>Candidate Form</h2>
+    <h3>Hello amazing candidate! Tell us what you're looking for :)</h3>
     <hr>
 
+    <h3 id="header"><strong>What's Your Name?</strong></h3>
+      <textarea>
+      </textarea>
+
     <h3><strong>Question 1</strong></h3>
-    <h4>What department are you looking for a role in</h4>
+    <h4>What department are you looking for a role in?</h4>
     <select class="chosen-select" id="q1">
       <option value="1">Business</option>
       <option value="2">HR/Admin</option>
@@ -34,7 +41,7 @@
 
 
     <h3><strong>Question 4</strong></h3>
-    <h4>Which of the best describes the office culture you enjoy?</h4>
+    <h4>Which of the below best describes the office culture you enjoy?</h4>
     <select class="chosen-select" id="q">
       <option value="1">Casual</option>
       <option value="2">Formal</option>
@@ -44,7 +51,7 @@
 
 
     <h3><strong>Question 5</strong></h3>
-    <h4>Describe the seniority level of role you're looking for? </h4>
+    <h4>Describe the seniority level of role you're looking for </h4>
     <select class="chosen-select" id="q">
       <option value="1">Entry Level</option>
       <option value="2">Junior</option>
@@ -95,7 +102,7 @@
       <option value="2">No</option>
     </select>
 
-       <h3 id="header"><strong>Question 11</strong></h3>
+    <h3 id="header"><strong>Question 11</strong></h3>
     <h4>Write a brief intro about yourself to potential employers (500 character max):</h4>
 
       <textarea>
@@ -104,9 +111,9 @@
           {{!-- creating text box here  --}}
     <!--<div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q10_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>-->
 
+</div>
 
- <button type="submit" id="candidateButton" class="btn btn-primary btn-lg btn-block submitButton"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+ <button type="submit" id="candidateButton" class="btn btn-primary submit">Submit</button>
 
 </div>
 

@@ -13,10 +13,8 @@ router.get('/employerform', function (req, res) {
   res.render('employerform')
 })
 
-
-
-
-
-
+router.get('/employerlist', function (req, res) {
+  res.render('employerlist')
+})
 
 module.exports = router;

@@ -7,15 +7,11 @@ $(document).ready(function(){
     var form = $(this).attr("id")== "employerButton" ? "employer" : "candidate"
     var answers = [];
     var dropDowns = $(".chosen-select")
-    
-    
-    
+  
     for (var i = 0; i < dropDowns.length; i++) { 
       answers.push(dropDowns[i].value)
     }
       console.log(answers,form);
-
-
       $.ajax({
         method: "POST",
         url: "/formSubmit",
@@ -29,10 +25,6 @@ $(document).ready(function(){
         .done(function( msg ) {
           console.log( "Data Saved: " + msg );
         });
-
-
-
-    
   });
 });
 
