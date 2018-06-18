@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    
+
     department_name: {
       type: DataTypes.INTEGER,
       allowNull: false
@@ -50,9 +50,14 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
 
+    candidate_name:{
+      type: DataTypes.STRING(50),
+      allowNull: false
+    }
 
 
 
+    
   }, {
     classMethods: {
       associate: function(models) {
