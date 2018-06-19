@@ -18,20 +18,17 @@ $(document).ready(function(){
         data:{
           formAnswers: answers,
           formName: form,
-          surveyName: "surveyName",
+           surveyName: $.trim($(".nameof").val()),
+           about: $.trim($(".aboutme").val()),
+          
           
         }
       })
         .done(function(data) {
           //console.log( "Data Saved: " + data.employerData.employer_name);
           var messageBox = $('<div>')
-          messageBox.width("200px")
-          messageBox.height("200px")
-          messageBox.css("position", "absolute")
-          messageBox.css("margin-top", "5%")
-         
-          messageBox.css("z-index","5")
-          messageBox.css("background-color","white")
+          messageBox.addClass("messagebox")
+          
           if(form=="candidate"){
             messageBox.html(data.employerData.employer_name)
           }
