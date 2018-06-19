@@ -22,8 +22,25 @@ $(document).ready(function(){
           
         }
       })
-        .done(function( msg ) {
-          console.log( "Data Saved: " + msg );
+        .done(function(data) {
+          //console.log( "Data Saved: " + data.employerData.employer_name);
+          var messageBox = $('<div>')
+          messageBox.width("200px")
+          messageBox.height("200px")
+          messageBox.css("position", "absolute")
+          messageBox.css("margin-top", "5%")
+         
+          messageBox.css("z-index","5")
+          messageBox.css("background-color","white")
+          if(form=="candidate"){
+            messageBox.html(data.employerData.employer_name)
+          }
+          else {
+            messageBox.html(data.candidateData.candidate_name)
+          }
+          $('.jumbotron').prepend(messageBox)
+
+          
         });
   });
 });
@@ -47,5 +64,3 @@ $(document).ready(function(){
 
 
 
-
-//employer form logic
