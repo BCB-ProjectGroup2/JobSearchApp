@@ -7,3 +7,25 @@
 
   </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $.ajax({
+        method: "GET",
+        url: "/getallemployers"
+      })
+     .done(function(data) {
+       var ul = $("<ul>")
+         for (var i = 0; i < data.companyNames.length; i++){
+           var li = $("<li>")
+             li.html(data.companyNames[i])
+             ul.append(li)
+         }
+    $(".jumbotron").append(ul)
+    })
+
+})
+
+
+  
+</script>
