@@ -42,15 +42,16 @@ router.post('/formSubmit',function (req,res) {
      
     for (var i = 0; i < possibleEmployerMatches.length; i++) {
       var Score = 0;
-      Score += possibleEmployerMatches[i].company_size - Number(req.body.formAnswers[1])
-      Score += possibleEmployerMatches[i].company_maturity - Number(req.body.formAnswers[2])
-      Score += possibleEmployerMatches[i].office_culture - Number(req.body.formAnswers[3])
-      Score += possibleEmployerMatches[i].role_seniority - Number(req.body.formAnswers[4])
-      Score += possibleEmployerMatches[i].salary_range - Number(req.body.formAnswers[5])
-      Score += possibleEmployerMatches[i].role_type - Number(req.body.formAnswers[6])
-      Score += possibleEmployerMatches[i].start_time - Number(req.body.formAnswers[7])
-      Score += possibleEmployerMatches[i].upward_mobility - Number(req.body.formAnswers[8])
-      Score += possibleEmployerMatches[i].international_offices - Number(req.body.formAnswers[9])
+      Score += possibleEmployerMatches[i].department_name - Number(req.body.formAnswers[1])
+      Score += possibleEmployerMatches[i].company_size - Number(req.body.formAnswers[2])
+      Score += possibleEmployerMatches[i].company_maturity - Number(req.body.formAnswers[3])
+      Score += possibleEmployerMatches[i].office_culture - Number(req.body.formAnswers[4])
+      Score += possibleEmployerMatches[i].role_seniority - Number(req.body.formAnswers[5])
+      Score += possibleEmployerMatches[i].salary_range - Number(req.body.formAnswers[6])
+      Score += possibleEmployerMatches[i].role_type - Number(req.body.formAnswers[7])
+      Score += possibleEmployerMatches[i].start_time - Number(req.body.formAnswers[8])
+      Score += possibleEmployerMatches[i].upward_mobility - Number(req.body.formAnswers[9])
+      Score += possibleEmployerMatches[i].international_offices - Number(req.body.formAnswers[10])
       matchScores.push(Score)
   }
     var indexOfMinimum = matchScores.indexOf(Math.min.apply(null,matchScores))
@@ -80,15 +81,16 @@ router.post('/formSubmit',function (req,res) {
         
        for (var i = 0; i < possibleCandidateMatches.length; i++) {
          var Score = 0;
-         Score += possibleCandidateMatches[i].company_size - Number(req.body.formAnswers[1])
-         Score += possibleCandidateMatches[i].company_maturity - Number(req.body.formAnswers[2])
-         Score += possibleCandidateMatches[i].office_culture - Number(req.body.formAnswers[3])
-         Score += possibleCandidateMatches[i].role_seniority - Number(req.body.formAnswers[4])
-         Score += possibleCandidateMatches[i].salary_range - Number(req.body.formAnswers[5])
-         Score += possibleCandidateMatches[i].role_type - Number(req.body.formAnswers[6])
-         Score += possibleCandidateMatches[i].start_time - Number(req.body.formAnswers[7])
-         Score += possibleCandidateMatches[i].upward_mobility - Number(req.body.formAnswers[8])
-         Score += possibleCandidateMatches[i].international_offices - Number(req.body.formAnswers[9])
+         Score += possibleCandidateMatches[i].department_name - Number(req.body.formAnswers[1])
+         Score += possibleCandidateMatches[i].company_size - Number(req.body.formAnswers[2])
+         Score += possibleCandidateMatches[i].company_maturity - Number(req.body.formAnswers[3])
+         Score += possibleCandidateMatches[i].office_culture - Number(req.body.formAnswers[4])
+         Score += possibleCandidateMatches[i].role_seniority - Number(req.body.formAnswers[5])
+         Score += possibleCandidateMatches[i].salary_range - Number(req.body.formAnswers[6])
+         Score += possibleCandidateMatches[i].role_type - Number(req.body.formAnswers[7])
+         Score += possibleCandidateMatches[i].start_time - Number(req.body.formAnswers[8])
+         Score += possibleCandidateMatches[i].upward_mobility - Number(req.body.formAnswers[9])
+         Score += possibleCandidateMatches[i].international_offices - Number(req.body.formAnswers[10])
          matchScores.push(Score)
      }
        var indexOfMinimum = matchScores.indexOf(Math.min.apply(null,matchScores))
