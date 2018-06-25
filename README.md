@@ -1,5 +1,7 @@
 # JobSearchApp
 
+Deployed: https://fathomless-chamber-42672.herokuapp.com/
+
 ## Introduction to JobSearchApp
 JobSearch App is a candidate driven job search app. 
 
